@@ -1,0 +1,17 @@
+relativeURLs = true
+title = "Jacob Goss"
+theme = "academimal"
+sectionPagesMenu = "main"
+defaultContentLanguage = "en"
+ignorefiles = [ "hugo_travis_ci", ".travis.yml", "phd_cv.tex" ]
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[params]
+    shortbio = "PhD Student in Economics, University of Wisconsin-Madison"
+    logo = "prof_pic.jpg"
+    GoogleScholar = "https://scholar.google.com/citations?user=4Blae28AAAAJ&hl=en&oi=ao"
+    LinkedIn = "https://www.linkedin.com/in/jake-goss-724826158/"

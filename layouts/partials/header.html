@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.Language.Lang }}">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>{{ .Site.Title }} | {{ .Title }}</title>
+        <link rel="stylesheet" href="{{ "/css/style.css" | relURL }}">
+        <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+    </head>
+    <body>
+        <div class="wrapper">
+            <header>
+                <h1>{{ .Site.Title }}</h1>
+
+                <!-- begin short bio -->
+                <p>{{ .Site.Params.shortbio }}</p>
+                <!-- end short bio -->
+
+                <hr/>
+
+                {{ partial "sidebar.html" . }}
+
+                <!-- begin photo -->
+                {{ with .Site.Params.logo }}
+                <img src="{{ . | relURL }}" alt="Logo" />
+                {{ end }}
+                <!-- end photo -->
+
+                <!-- social icons below photo -->
+                <p style="margin:10px 0 0;">
+                {{ with .Site.Params.GoogleScholar }}
+                <a href="{{ . }}" target="_blank" title="Google Scholar" style="margin-right:12px;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 512 512" style="vertical-align:middle;"><path fill="#4285F4" d="M256 411.12L0 202.667 256 0z"/><path fill="#356AC3" d="M256 411.12l256-208.453L256 0z"/><circle fill="#A0C3FF" cx="256" cy="362.667" r="149.333"/><path fill="#76A7FA" d="M121.037 298.667c23.968-67.792 88.466-116.267 164.963-116.267 41.742 0 79.902 15.188 109.342 40.333l-48.333 48.333C324.671 253.067 296.33 242.667 266 242.667c-48.2 0-89.592 28.392-108.963 69.333z"/></svg>
+                </a>
+                {{ end }}
+                {{ with .Site.Params.LinkedIn }}
+                <a href="{{ . }}" target="_blank" title="LinkedIn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="vertical-align:middle;"><path fill="#0A66C2" d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                </a>
+                {{ end }}
+                </p>
+
+            </header>

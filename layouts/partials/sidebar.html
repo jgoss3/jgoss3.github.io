@@ -1,0 +1,14 @@
+<p class="contactinfo"><a href="{{ "#bio" | relURL }}">Bio</a></p>
+{{ with .GetPage "/sections/contact.md" }}
+<p class="contactinfo"><a href="{{ "#contact" | relURL }}">Contact</a></p>
+{{ end }}
+<p class="contactinfo"><a href="goss_cv.pdf" target="_blank">CV</a></p>
+{{ with .Site.Data.publications }}
+<p class="contactinfo"><a href="{{ "#publications" | relURL }}">Publications</a></p>
+{{ end }}
+{{ with .Site.Data.work_in_progress }}
+<p class="contactinfo"><a href="{{ "#workinprogress" | relURL }}">Working Papers</a></p>
+{{ end }}
+{{ with .Site.Data.working_papers }}
+<p class="lastcontactinfo"><a href="{{ "#workingpapers" | relURL }}">Policy & Blogs</a></p>
+{{ end }}

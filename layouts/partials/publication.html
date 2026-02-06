@@ -1,0 +1,25 @@
+<h3 style="margin:20px 0 5px;">{{ with .context.pdflink }}<a href="{{ . }}" target="blank">{{ end }}{{ .context.title }}{{ with .context.pdflink }}</a>{{ end }}</h3>
+
+{{ with .context.coauthors }}<p style="margin:0 0 5px;">(with {{ . }})</p>{{ end }}
+
+{{ with .context.note }}<p style="margin:0 0 5px;">{{ . }}</p>{{ end }}
+{{ with .context.book }}<p style="margin:0 0 5px;"><em>{{ . }}</em></p>{{ end }}
+{{ $pid := .pid }}
+{{ with .context.abstract }}<p style="margin:0 0 5px;"><a href="javascript:toggle({{ $pid }})">Abstract</a><span id="pubabs_{{ $pid }}" style="display:none;">: {{ . }}</span></p>{{ end }}
+
+{{ with .context.links }}
+{{ range . }}
+<p style="margin:0 0 5px;"><a href="{{ .url }}" target="blank">{{ .text }}</a>{{ with .note }}: {{ . }}{{ end }}</li>
+{{ end }}
+{{ end }}
+
+{{ with .context.media }}
+<details style="margin:0 0 10px; padding-left: 5px;">
+<summary style="cursor:pointer; color:#267CB9; font-size:0.9em;">Media Coverage</summary>
+<ul style="margin:5px 0 0 10px; padding-left: 10px; font-size:0.9em;">
+{{ range . }}
+<li style="margin:2px 0;"><a href="{{ .url }}" target="_blank">{{ .text }}</a></li>
+{{ end }}
+</ul>
+</details>
+{{ end }}
