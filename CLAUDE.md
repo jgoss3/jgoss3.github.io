@@ -16,6 +16,7 @@ Academic personal website for Jacob Goss, Economics PhD student at UW-Madison. B
 - `content/sections/contact.md` — Email and contact info
 - `content/goss_cv.pdf` — CV PDF (linked from bio)
 - `content/prof_pic.jpg` — Profile photo (shown in sidebar)
+- `content/Goss_Mangrum_betting_WD.pdf` — Betting paper working draft (linked from Working Papers)
 - `content/favicon.ico` — Tab icon (Bucky Badger)
 
 ### Publication Data (YAML)
@@ -39,8 +40,8 @@ works:
 
 ### Layout Overrides (override theme without modifying submodule)
 - `layouts/index.html` — Main page structure. Section order: Bio → Contact → Publications → Working Papers → Policy & Blogs
-- `layouts/partials/header.html` — Page header with title, short bio, sidebar, photo, and Google Scholar/LinkedIn SVG icons below photo
-- `layouts/partials/sidebar.html` — Navigation links: Bio, Contact, CV, Publications, Working Papers, Policy & Blogs
+- `layouts/partials/header.html` — Page header with title, short bio, sidebar, photo (max-height: 35vh), and Google Scholar/LinkedIn SVG icons below photo
+- `layouts/partials/sidebar.html` — Currently empty (nav links removed to save sidebar space)
 - `layouts/partials/publication.html` — Renders each paper entry. Supports expandable abstracts and per-paper "Media Coverage" dropdown via `<details>` element
 - `layouts/partials/foot.html` — Footer with JS toggle function for abstract expand/collapse
 
@@ -92,7 +93,6 @@ The Hugo data directory names don't match the display names:
 This is because we repurposed the template's original categories. Don't be confused by the directory names.
 
 ## TODOs
-- Fill in abstract for "Betting Across Borders" paper (currently ABSTRACT PLACEHOLDER)
 - Favicon: Bucky Badger ICO is in place but browser caching may show old W icon. Try incognito/new browser.
 - Add media coverage links to more papers as needed
 - Consider buying a custom domain (~$10-15/yr) for a cleaner URL on CV/signatures
