@@ -1,8 +1,9 @@
 works:
 - title: "Betting Across Borders: Consumer Credit Impacts from Mobile Sports Betting in the Presence of Spatial Spillovers"
+  pdflink: "Goss_Mangrum_betting_WD.pdf"
   coauthors: "Daniel Mangrum"
   abstract: >
-    ABSTRACT PLACEHOLDER
+    Since the 2018 Murphy v. NCAA decision, 38 states have legalized mobile sports betting. We study effects on betting and consumer credit, emphasizing spatial spillovers across state lines. Using consumer spending data and an extended two-way fixed effects framework that separately identifies direct and spillover effects, we find that legalization increases total sportsbook spending roughly tenfold and take-up by 3.1 percentage points. Counties in non-legal states within 15 miles of a legal state experience spillover spending equal to roughly 14% of the direct effect, with these spillovers declining to roughly zero by 60 miles. Using the New York Fed Consumer Credit Panel, we find that median credit scores decline by roughly 1 point and overall delinquency rises 0.3 percentage points from a 10.7% base, with spillover delinquency rising nearly 0.2 percentage points. Under-40 auto loan delinquency increases by half a percentage point and credit card delinquency by one percentage point, driving the overall increase in delinquency. Scaling the population-level delinquency effect by take-up yields implied delinquency increases of roughly 10 percentage points among induced bettors. We conclude with a policy simulation which reveals that spillovers create a fiscal asymmetry: states that have not legalized bear costs from cross-border betting without capturing tax revenue, giving high-exposure states a stronger case for legalization. This incentive is increasing in states that have higher pre-legalization betting activity, population centers near legal states, and a younger population. Methodologically, we show that ignoring spatial spillovers can contribute to attenuated estimates and an under-count of the affected population.
 
 - title: "Refinancing Student Debt: Borrower Preferences and Policy Implications"
   abstract: >
